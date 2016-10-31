@@ -1,0 +1,27 @@
+Data format:
+============
+
+Disparity and flow values range [0..256] and [-512..+512] respectively. For
+both image types documented MATLAB and C++ utility functions are provided
+within this development kit in the folders matlab and cpp. If you want to
+use your own code instead, you can use the following guidelines:
+
+Disparity maps are saved as uint16 PNG images, which can be opened with
+either MATLAB or libpng++. A 0-value indicates that no ground truth exists
+for that pixel. Otherwise the disparity for a pixel can be computed by
+converting the uint16 value to float and dividing it by 256:
+
+disp(u,v)  = ((float)I(u,v))/256.0;
+valid(u,v) = I(u,v)>0;
+
+Optical flow maps are saved as 3-channel uint16 PNG images: The first channel
+contains the u-component, the second channel the v-component and the third
+channel denotes if a valid ground truth optical flow value exists for that
+pixel (1 if true, 0 otherwise). To convert the u-/v-flow into floating point
+values, convert the value to float, subtract 2^15 and divide the result by 64:
+
+flow_u(u,v) = ((float)I(u,v,1)-2^15)/64.0;
+flow_v(u,v) = ((float)I(u,v,2)-2^15)/64.0;
+valid(u,v)  = (bool)I(u,v,3);
+
+
