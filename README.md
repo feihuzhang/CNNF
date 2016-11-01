@@ -14,7 +14,7 @@ This package of demo code include 6 different parts.
 
 "CostFilter-original":	this is the original costvolume [1] method (particle based) for stereo matching and optical flow.
 
-"CostFilter-improved": this is the original costfilter with our feature scheme implemented. 
+"CostFilter-improved": this is the improved costfilter with our feature scheme implemented. 
 
 "Tools:"	this package provide some useful matlab tools to change the data form (e.g. 'flo' to 'int16 png', color coding for visualization).
 
@@ -40,7 +40,7 @@ $./Extractor [input images] [feature model] [output file]
 
 Then, you can try the above dense matching algorithms in each package.
 
-In each package, we provide a matlab/python demo script. You can directly run them if you are not familiar with the algorithms.
+In each package, we provide a matlab/python demo script. You can directly run them if you are not very familiar with the steps.
 If you want to try new examples, you can only change the inputs name and route in these demo scripts.
 For parameters of these algorithms, you need to refer [1][2][3].
 There is also a readme file in each of the above packages, you can refer them for more details.
