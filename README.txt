@@ -10,7 +10,7 @@ This package of demo code include 6 different parts.
 
 "CostFilter-original":	this is the original costvolume [1] method (particle based) for stereo matching and optical flow.
 
-"CostFilter-improved": this is the original costfilter with our feature scheme implemented. 
+"CostFilter-improved": this is the improved costfilter with our feature scheme implemented. 
 
 "Tools:"	this package provide some useful matlab tools to change the data form (e.g. 'flo' to 'int16 png', color coding for visualization).
 
@@ -36,7 +36,7 @@ $./Extractor [input images] [feature model] [output file]
 
 Then, you can try the above dense matching algorithms in each package.
 
-In each package, we provide a matlab/python demo script. You can directly run them if you are not familiar with the algorithms.
+In each package, we provide a matlab/python demo script. You can directly run them if you are not familiar with the steps.
 If you want to try new examples, you can only change the inputs name and route in these demo scripts.
 For parameters of these algorithms, you need to refer [1][2][3].
 There is also a readme file in each of the above packages, you can refer them for more details.
@@ -44,6 +44,6 @@ There is also a readme file in each of the above packages, you can refer them fo
 
 REFERENCE
 =========
-[1] C. Rhemann, A. Hosni, M. Bleyer, C. Rother, and M. Gelautz, ¡°Fast cost-volume filtering for visual correspondence and beyond,¡± in Proc. Conf. on Computer Vision and Pattern Recognition (CVPR). IEEE, 2011, pp. 3017¨C3024.
-[2] M. Bleyer, C. Rhemann, and C. Rother, ¡°Patchmatch stereo-stereo matching with slanted support windows.¡± in British Machine Vision Conference (BMVC), vol. 11, 2011, pp. 1¨C11. 
-[3] F. Besse, C. Rother, A. Fitzgibbon, and J. Kautz, ¡°Pmbp: Patchmatch belief propagation for correspondence field estimation,¡± Int¡¯l J. of Computer Vision, vol. 110, no. 1, pp. 2¨C13, 2014.
+[1] C. Rhemann, A. Hosni, M. Bleyer, C. Rother, and M. Gelautz, Â¡Â°Fast cost-volume filtering for visual correspondence and beyond,Â¡Â± in Proc. Conf. on Computer Vision and Pattern Recognition (CVPR). IEEE, 2011, pp. 3017Â¨C3024.
+[2] M. Bleyer, C. Rhemann, and C. Rother, Â¡Â°Patchmatch stereo-stereo matching with slanted support windows.Â¡Â± in British Machine Vision Conference (BMVC), vol. 11, 2011, pp. 1Â¨C11. 
+[3] F. Besse, C. Rother, A. Fitzgibbon, and J. Kautz, Â¡Â°Pmbp: Patchmatch belief propagation for correspondence field estimation,Â¡Â± IntÂ¡Â¯l J. of Computer Vision, vol. 110, no. 1, pp. 2Â¨C13, 2014.
